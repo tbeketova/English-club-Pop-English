@@ -1,0 +1,20 @@
+.header {
+  /* min-height: 100px; */
+  background-color: $light;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header__box-logo {
+  width: 136px;
+  height: 100px;
+  position: absolute;
+  top: -16px;
+}
+
+.header__navigation {
+  margin-top: 100px;
+  align-self: flex-end;
+  z-index: 5;
+}

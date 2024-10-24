@@ -1,0 +1,64 @@
+.navigation {
+  /* width: 382px;
+  min-height: 572px;
+  background-image: url("./../../images/decor/header-bg-nav-mobile@1x.png");
+  background-repeat: no-repeat;
+  border: 2px solid $base-color-text; */
+}
+
+.navigation__wrapper {
+  width: 382px;
+  min-height: 572px;
+  background-image: url("./../../images/decor/header-bg-nav-mobile@1x.png");
+  background-repeat: no-repeat;
+  border: 2px solid $base-color-text;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 382px;
+}
+
+.navigation__toggle {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+}
+
+.navigation--closed .toggle {
+  width: 80px;
+  height: 52px;
+  background-image: url("../../icons/button-toggle.svg");
+  background-repeat: no-repeat;
+  background-size: 80px 52px;
+}
+
+.navigation--closed .navigation__wrapper {
+  display: none;
+}
+
+.navigation--opened .navigation__wrapper {
+  display: block;
+  position: absolute;
+  top: 105px;
+  right: 0;
+}
+
+.navigation--opened .toggle {
+  width: 72px;
+  height: 72px;
+  top: 16px;
+  background-image: url("../../icons/close-toggle.svg");
+  background-repeat: no-repeat;
+  background-size: 72px 72px;
+}
+
+.navigation--nojs .toggle {
+  display: none;
+}
+
+.navigation--nojs .navigation__wrapper {
+  display: block;
+}

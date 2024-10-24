@@ -1,0 +1,10 @@
+.site-list {
+  background-color: transparent;
+}
+
+.site-list__item a {
+  text-decoration: none;
+  font-size: 32px;
+  line-height: 45px;
+  color: $base-color-text;
+}

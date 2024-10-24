@@ -10,38 +10,47 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="./fonts/nyashasans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/styles.css">
-  <!-- <script src="scripts/index.js" defer></script> -->
 </head>
 <body class="page__body">
   <header class="header">
     <div class="header__box-logo logo">
       <a class="logo__link" href="#" aria-label="Логотип на главной странице">
-        <img class="logo__image logo" src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип">
+        <img class="logo__image" src="./images/logo-mobile@2x.png" width="136" height="100" alt="Логотип на главной странице английского клуба">
       </a>
     </div>
-    <nav class="header__navigation navigation navigation--closed navigation--nojs">
+    <nav class="header__navigation navigation--closed navigation navigation--nojs">
       <button class="navigation__toggle toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="navigation__list site-list">
-        <li class="site-list__item">О нас</li>
-        <li class="site-list__item">Преподаватели</li>
-        <li class="site-list__item">Цены</li>
-        <li class="site-list__item">Отзывы</li>
-      </ul>
-      <button class="navigation__button button" type="submit">Записаться</button>
-      <div class="navigation__social social">
-        <ul class="social__list">
-          <li class="social__list-item social__list-item--telegram">
-            <span class="visually-hidden">Телеграм</span>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list site-list">
+          <li class="site-list__item">
+            <a href="#">О нас</a>
           </li>
-          <li class="social__list-item social__list-item--youtube">
-            <span class="visually-hidden">Youtube</span>
+          <li class="site-list__item">
+            <a href="#">Преподаватели</a>
           </li>
-          <li class="social__list-item social__list-item--vk">
-            <span class="visually-hidden">Вконтакте</span>
+          <li class="site-list__item">
+            <a href="#">Цены</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Отзывы</a>
           </li>
         </ul>
+        <button class="navigation__button button" type="submit">Записаться</button>
+        <div class="navigation__social social">
+          <ul class="social__list">
+            <li class="social__list-item social__list-item--telegram">
+              <span class="visually-hidden">Телеграм</span>
+            </li>
+            <li class="social__list-item social__list-item--youtube">
+              <span class="visually-hidden">Youtube</span>
+            </li>
+            <li class="social__list-item social__list-item--vk">
+              <span class="visually-hidden">Вконтакте</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -268,5 +277,6 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/index.js" defer></script>
 </body>
 </html>
